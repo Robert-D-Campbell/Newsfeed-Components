@@ -205,7 +205,7 @@ function createArticle(title, date, p1, p2, p3, btn) {
 }
 const articles = document.querySelector(".articles");
 
-data.forEach(item => {
+data.map(item => {
   console.log("creating article!", item.title);
   articles.appendChild(
     createArticle(
